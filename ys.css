@@ -94,7 +94,7 @@ html,body{
 
 /*文字盒子*/
 .wzhz{
-    width: 100%;height: 60%;position: relative;
+    width: 100%;height: 60%;position: relative;top:5%;
 }
 
 /*文字*/

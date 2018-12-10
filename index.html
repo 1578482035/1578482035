@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--PC端页面-->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎！</title>
+    <link rel="shortcut icon" href="img/10.png"/>
+    <link rel="stylesheet" href="yangshi.css"/>
+    <script src="jiaoben.js"></script>
+
+    <!--检测用户访问网站所使用的设备类型-->
+    <script>
+    
+        var system ={};                            
+        var p = navigator.platform;                              
+        system.win = p.indexOf("Win") == 0;                       
+        system.mac = p.indexOf("Mac") == 0;                          
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);                         
+        if(system.win||system.mac||system.xll){
+        //如果是电脑，跳转到                            
+        window.location.href="#";                       
+        }
+        else{ 
+        //如果是手机,跳转到                            
+        window.location.href="zym/ydd.html";                      
+        }
+                    
+        </script>
+</head>
+
+<body>
+<!--登录页面层，固定定位遮拦全屏-->
+<div id="dlc">
+    <!--登录框盒子-->
+    <div class="dlhz">
+        <!--关闭图标-->
+        <span id="guanbi" onclick="yingcang()">×</span>
+        <div id="denglu" class="dlxx dl" onclick="denglu()">登录</div>
+        <div id="mianfeizhuce" class="dlxx mfzc" onclick="zhuce()">免费注册</div>
+        <!--登录框-->
+            <form id="denglukuang" class="dlk" action="#">
+                <div id="yonghu">
+                    <div class="tb yhtb"></div>
+                    <input class="zhanghao" type="text" placeholder="请输入账号"/>
+                </div>
+
+                <div id="yonghu">
+                    <div class="tb mmtb"></div>
+                    <input class="zhanghao" type="password" placeholder="请输入密码"/>
+                </div>
+
+                <a href="#"><input class="dlan" type="submit" value="登录"/></a>
+                <a href="#"><span class="wjmm">忘记密码</span></a>
+                <!--其他登录方式入口-->
+                <div class="qtfsdl">
+                    <span class="qtfs">其他方式登录:</span>
+                    <a href="#"><div class="qqdl"><img src="img/22.png" title="QQ"/></div></a>
+                    <a href="#"><div class="wxdl"><img src="img/23.png" title="微信"/></div></a>
+                </div>
+            </form>
+
+       <!--注册框-->
+            <form id="zhucekuang" class="zck">
+                <div id="yonghu">
+                    <div class="tb zcyh"></div>
+                    <input class="zhanghao" type="text" placeholder="用户名/6~12位数字或字母"/>
+                </div>
+        
+                <div id="yonghu">
+                    <div class="tb zcmm"></div>
+                    <input class="zhanghao" type="password" placeholder="密码/6~12位数字或字母"/>
+                </div>
+
+                <div id="yonghu">
+                        <div class="tb cfmm"></div>
+                        <input class="zhanghao" type="password" placeholder="确认密码"/>
+                </div>
+                <a href="#"><input class="dlan" type="submit" value="快速注册"/></a>
+
+
+                
+            </form>
+
+
+       
+
+    </div>
+</div>
+
+<!---------------第一页盒子--------------->  
+<div id="hezi1">
+<!--logo盒子-->
+<div class="logo">
+    <!--logo-->
+    <div class="ylxz"></div>
+    <!--登录注册盒子-->
+    <div class="denglu">
+        <span><a href="#" onclick="xianshi()">登录/注册</a></span>
+    </div>     
+</div>
+
+<!--半透明导航-->
+<div class="daohang">
+<!--导航盒子-->
+    <div class="dhhz">
+            <div class="xuanxiang xx1 xbk"><a href="#">官网主页</a></div>
+            <div class="xuanxiang xx2 xbk"><a href="#">产品展示</a></div>
+            <div class="xuanxiang xx3 xbk"><a href="#">公司简介</a></div>
+            <div class="xuanxiang xx4 xbk"><a href="#">联系我们</a></div>
+            <div class="xuanxiang xx5"><a href="">更多&nbsp;<span>﹀</span></a>
+                <!--下面是隐藏的导航块-->
+                <div class="ycdh">
+                    <a href="#"><div class="yc yc1">BUFF</div></a>
+                    <a href="#"><div class="yc yc2">COLO</div></a>
+                    <a href="#"><div class="yc yc3">CLSS</div></a>
+                    <a href="#"><div class="yc yc4">ABFF</div></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!--中间文字盒子-->
+<div class="wzhz">
+    <h3 class="h3">What can we do?</h3>
+    <h1 class="h1">PERFECT PROJECT SOLUTION.</h1>
+    <h1 class="h2">ONE TO ONE SERVICE&nbsp;<span style="color:#f71b4b">&</span>&nbsp;TECHNICAI SUPPORT</h1>
+</div>
+
+<!--底层两个图文盒子-->
+<a href="#">
+    <!--左图文块-->
+<div class="tuwen tuwen1">
+    <div class="tw1">
+       <!--链接图标-->
+       <div class="lj lj1"></div>
+    </div>
+    <!--头像-->
+    <div class="tw2">
+       <span class="wz1">2018</span>
+       <span class="wz2">NO.1</span>
+       <div class="wz3">
+           <div class="touxiang"></div>
+           <div class="tianming">
+               <span style="font-size:10px;">本周设计师</span>天明-
+            <span style="font-size: 10px;display: inline-block;">来自墨家</span></div>
+       </div>
+    </div>
+</div>
+</a>
+
+
+<!--右图文块，部分样式继承上面的图文块-->
+<div class="tuwen tuwen2">
+    <div class="tw1">
+        <div class="lj lj2"></div>
+    </div>
+
+    <!--两张图片-->
+    <div class="tw2">
+        <a href="#">
+            <div class="tp tp1"><!--第一个图片盒子-->
+              <div class="tmzl"><!--透明遮拦-->
+                <span>精美陶瓷</span>
+              </div>
+            </div>
+        </a>
+
+        <a href="#">
+        <div class="tp tp2">
+            <div class="tmzl"><!--透明遮拦-->
+                <span>精美首饰</span>
+            </div>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="tp tp3">
+            <div class="tmzl"><!--透明遮拦-->
+                <span>个性戒指</span>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+
+</div>
+
+
+<!--------------第二页盒子--------------->
+<div id="hezi2">
+<p class="biaoti bt1">CERAMICS</p>
+<p class="biaoti bt2">精美陶瓷</p>
+<!--业务展示图文盒子-->
+<a href="#">
+<div class="yewu yw1">
+    <img src="img/12.jpeg">
+    <div class="szdz">
+        <span class="psfa">装饰花瓶</span>
+        <span class="srdz">每一款都是匠心之作</span>
+    </div>
+    <!--鼠标经过时显示说明文字，此处调用动画实现渐现效果-->
+    <div class="ycts">
+        <span>我们有专业的时装设计师</span>
+        <span>他们拥有高超的技艺</span>
+        <span>为你定制自己的专属时装</span>
+    </div>
+</div>
+</a>
+
+<a href="#">
+<div class="yewu yw2">
+    <img src="img/13.jpeg">
+    <div class="szdz">
+        <span class="psfa">咖啡器具</span>
+        <span class="srdz">享受生活，品味生活</span>
+    </div>
+    <div class="ycts">
+            <span>策划专属于你的形象方案</span>
+            <span>你也可以自己设计</span>
+            <span>塑造更美丽的你！</span>
+    </div>
+</div>
+</a>
+
+<a href="#">
+<div class="yewu yw3">
+    <img src="img/14.jpg">
+    <div class="szdz">
+        <span class="psfa">陶瓷艺术</span>
+        <span class="srdz">艺术与生活的完美结合</span>
+    </div>
+    <div class="ycts">
+            <span>专业的摄影师</span>
+            <span>他们有天马行空的想象力</span>
+            <span>定格你最美的样子</span>
+    </div>
+</div>
+</a>
+
+<a href="#">
+<div class="yewu yw4">
+    <img src="img/15.jpg">
+    <div class="szdz">
+        <span class="psfa">陶瓷摆件</span>
+        <span class="srdz">生活美学的产物</span>
+    </div>
+    <div class="ycts">
+            <span>如果你不会穿衣搭配</span>
+            <span>点这里</span>
+            <span>我们有最全的穿衣搭配方案</span>
+    </div>
+</div>
+</a>
+
+</div>
+
+
+
+</body>
+
+</html>
